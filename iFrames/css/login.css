@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(/media/siteBanner.png);
-    color: white;
+    /* background-color: #454549; */
+    color: white
 }
 
 main {
@@ -10,15 +10,9 @@ main {
 
     justify-content: center;
     align-items: center;
-
     height: 100vh;
 }
 
-img {
-    width: 300px;
-    margin-bottom: 30px;
-}
-
-main > h1 {
+h1 {
     margin: 0;
 }
