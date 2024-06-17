@@ -57,12 +57,12 @@
         }
 
         async function login() {
-            window.location.href = 'https://api.jaimytuin.com:3000/login'; // Update with your backend URL
+            window.location.href = 'https://api.jaimytuin.com/login'; // Update with your backend URL
         }
 
         async function checkLoginStatus() {
             try {
-                const response = await fetch('https://api.jaimytuin.com:3000/user', { credentials: 'include' });
+                const response = await fetch('https://api.jaimytuin.com/user', { credentials: 'include' });
                 if (response.ok) {
                     return true;
                 } else {

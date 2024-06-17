@@ -10,12 +10,12 @@ async function urlExists(url) {
 
 // Server
 async function logout() {
-    window.location.href = 'https://api.jaimytuin.com:3000/logout'; // Update with your backend URL
+    window.location.href = 'https://api.jaimytuin.com/logout'; // Update with your backend URL
 }
 
 async function checkAuthentication() {
     try {
-        const response = await fetch('https://api.jaimytuin.com:3000/user', {
+        const response = await fetch('https://api.jaimytuin.com/user', {
             method: 'GET',
             credentials: 'include'
         });
@@ -31,7 +31,7 @@ async function checkAuthentication() {
 
 async function fetchUserData() {
     try {
-        const response = await fetch('https://api.jaimytuin.com:3000/userdata', {
+        const response = await fetch('https://api.jaimytuin.com/userdata', {
             method: 'GET',
             credentials: 'include' // Include cookies in the request
         });
@@ -53,7 +53,7 @@ async function fetchUserData() {
 
 async function fetchGuilds() {
     try {
-        const response = await fetch('https://api.jaimytuin.com:3000/user-guilds', {
+        const response = await fetch('https://api.jaimytuin.com/user-guilds', {
             method: 'GET',
             credentials: 'include'
         });
