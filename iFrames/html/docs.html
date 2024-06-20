@@ -5,14 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/iFrames/css/main.css">
+    <link rel="stylesheet" href="/iFrames/css/index.css">
+    <link rel="stylesheet" href="/iFrames/css/docs.css">
+    <script src="https://kit.fontawesome.com/6006becb07.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
-        <h1>Documentation</h1>
-        <p>How do I install bot? 😭</p>
+        <section id="docs">
+            <!-- <h1>Documentation</h1> -->
+            <!-- <p>More documentation coming soon</p> -->
+        </section>
+        <section class="features-section">
+            <h1>Documentation</h1>
+            <!-- <h2>Quick navigation</h2> -->
+            <div class="features-container">
+                <div class="feature-box" onclick="scrollToSection('targetSection1')">
+                    <i class="fa-solid fa-user"></i>
+                    <h3 class="feature-title">New member issues</h3>
+                    <p class="feature-description">You are a member who just joined a server using the verify/tutorial system and you are experiencing issues with the system.</p>
+                </div>
+                <div class="feature-box" onclick="scrollToSection('targetSection2')">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <h3 class="feature-title">Setup tutorial</h3>
+                    <p class="feature-description">You are staff in a discord server and need help setting up the verify/tutorial system.</p>
+                </div>
+                <div class="feature-box" onclick="scrollToSection('targetSection3')">
+                    <i class="fa-solid fa-user-xmark"></i>
+                    <h3 class="feature-title">Issues / errors</h3>
+                    <p class="feature-description">You are staff in a discord server and need help setting up the verify/tutorial system.</p>
+                </div>
+            </div>
+        </section>
+        
+        <h2 id="sectionTitle">Member issues</h2>
+        <div id="targetSection1"></div>
+        <section class="newmember">
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>Interaction failed</h2>
+                    <p>If the bot displays "This interaction failed" you have run into an issue regarding the button collector. This is most likely caused by waiting too long or if the bot has restarted. If this occurs, please retake the verification.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/VerifyMemberIssue.png" alt="InteractionFailedIssue">
+                </div>
+            </div>
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>Verified role not granted</h2>
+                    <p>Finished the verification/tutorial, but didn't get a verified role causing you to not be able to access the rest of the server? Please contact a server staff member; this issue is most likely caused by the role ID being invalid.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/Oops.png" alt="OopsErrMsg">
+                </div>
+            </div>                
+        </section>
+        
+        <h2 id="sectionTitle">Setup tutorial</h2>
+        <div id="targetSection2"></div>
+        <section class="setuptutorial">
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>1 - Getting started</h2>
+                    <p>Before we start the tutorial, make sure your server has a channel where the verify message will be displayed and make sure you have set up a role to give to new members who finish the verification/tutorial.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/SetupMSG.png" alt="SystemSetup">
+                </div>
+            </div>
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>2 - Selecting a channel</h2>
+                    <p>Run the /database set command and choose Verify channel at the Type field. After this, select the preferred channel from the list. <br>Upon finishing this task, the setup menu will open.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/VerifyChannel.png" alt="ChannelSelect">
+                </div>
+            </div>
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>3 - Setting a verified role</h2>
+                    <p>Next step is setting a role to grant users who complete the verification/tutorial. This can be achieved by clicking the Verify role button on the setup menu, in the menu that opens type or paste in the ID of the preferred role.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/VerifyRole.png" alt="RoleSelect">
+                </div>
+            </div>
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>4 - Adding a page</h2>
+                    <p>Next step is adding your own page to the verification/tutorial system! Click the Add button on the setup menu and fill in the fields on the menu that opens. <br><br>The page cooldown will be the timer before the new member can go to the next page. e.g. 10000 = 10 seconds</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/AddPage.png" alt="RoleSelect">
+                </div>
+            </div>
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>5 - Editing a page</h2>
+                    <p>Made a mistake, or don't like one of the pages, but don't want to change the page order? Edit a page by clicking the Edit button on the setup menu! You can select the page you want to edit using the dropdown menu.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/EditMSG.png" alt="RoleSelect">
+                </div>
+            </div>
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>6 - Removing a page</h2>
+                    <p>Not happy with one of the pages? Remove the unwanted page(s) by clicking the Remove button, same as edit this will display a dropdown menu where you can select 1 or more pages to remove.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/RemoveMSG.png" alt="RoleSelect">
+                </div>
+            </div>
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>7 - Publishing</h2>
+                    <p>Finished configuring? Pressing the Publish button will make the verify system public to new members.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/VerifyMSG.png" alt="RoleSelect">
+                </div>
+            </div>
+        </section>
+        
+        <h2 id="sectionTitle">Server staff issues</h2>
+        <div id="targetSection3"></div>
+        <section class="serverstaff">
+            <div class="text-image-block">
+                <div class="text-content">
+                    <h2>Support</h2>
+                    <p>If you are experiencing issues that aren't solved by following the tutorial found above, please join and ask for support in the <a href="https://discord.gg/2ytGbkcCxF">Spud support server</a>.</p>
+                </div>
+                <div class="image-content">
+                    <img src="/media/spudHelp/Oops.png" alt="SystemSetup">
+                </div>
+            </div>
+        </section> 
     </main>
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var headerHeight = window.innerWidth > 768 ? 140 : 165;
+                var targetPosition = section.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
 </body>
 
 </html>
