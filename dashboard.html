@@ -14,7 +14,16 @@
 
 <body>
     <main>
-        <aside class="sidebar">
+        <header class="mobileHeader">
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h2>Spud</h2>
+            <img src="/media/logos/spud.svg" alt="logo">
+        </header>
+        <aside class="sidebar" id="menuTarget">
             <div class="sidebar-header">
                 <img src="/media/logos/spud.svg" alt="logo">
                 <h2>Spud</h2>
@@ -29,6 +38,7 @@
                     <span>Main</span>
                     <div class="menu-separator"></div>
                 </h4>
+                <li><a href="#home"><span class="material-symbols-outlined">home</span>Home</a></li>
                 <li><a href="#servers"><span class="material-symbols-outlined">dashboard</span>Servers</a></li>
                 <li><a href="#docs"><span class="material-symbols-outlined">description</span>Documentation</a></li>
                 <h4>
@@ -58,6 +68,6 @@
         </aside>
         <iframe id="content-frame" src="" title="content"></iframe>
     </main>
-    <script src="/scripts.js"></script>
+    <script src="/scripts/dashboard.js"></script>
 </body>
 </html>
