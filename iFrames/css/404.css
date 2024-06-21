@@ -17,6 +17,12 @@ main {
 img {
     width: 300px;
     margin-bottom: 30px;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 main > h1 {
