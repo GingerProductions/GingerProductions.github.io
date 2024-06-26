@@ -92,6 +92,8 @@ body {
   padding: 15px 10px;
   text-decoration: none;
   transition: 0.2s ease;
+
+  cursor: pointer;
 }
 
 .sidebar-links li a:hover {
