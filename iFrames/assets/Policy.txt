@@ -1,0 +1,61 @@
+<span class="title">1. Introduction</span><br>
+This Privacy Policy outlines how SpudBot and related services, collects, uses, discloses, and protects your information. By using Spud, you agree to the practices described in this policy. If you have any questions or concerns, please contact us at <a href="mailto:jaimytuinyt@gmail.com">jaimytuinyt@gmail.com</a> or join our <a href="https://discord.gg/2ytGbkcCxF" target="_blank">Discord server</a>.
+<br><br>
+<span class="title">2. Information We Collect</span><br>
+<span class="subtitle">2.1 User-Submitted Data</span><br>
+Spud collects and stores data that users submit to configure various features, including:
+<ul>
+    <li>Server welcome messages</li>
+    <li>Verification system settings</li>
+    <li>Other configurations made through the bot</li>
+</ul>
+<br>
+<span class="subtitle">2.2 Member Data</span><br>
+Spud collects basic member data from Discord to provide its services. This includes:
+<ul>
+    <li>Username</li>
+    <li>User ID</li>
+    <li>Avatar</li>
+</ul>
+We only store the User ID in our database to support the leveling system functionality, other data is not stored or kept.
+<br><br>
+<span class="subtitle">2.3 Dashboard Data</span><br>
+When users log in to Spud's dashboard using their Discord account, we collect and store necessary data in a temporary session. This session data is deleted after a server restart or after a certain period.
+<br><br>
+<span class="title">3. Use of Information</span><br>
+<span class="subtitle">3.1 User-Submitted Data</span><br>
+We use the data you submit to customize and enhance your server experience with Spud, such as setting welcome messages and managing the verification system.
+<br><br>
+<span class="subtitle">3.2 Member Data</span><br>
+We use member data primarily to operate the leveling system. The User ID is stored to track progress and levels within the server.
+<br><br>
+<span class="subtitle">3.3 Dashboard Data</span><br>
+Temporary session data collected during dashboard login is used to provide you with access to the dashboard features and is deleted as specified.
+<br><br>
+<span class="title">4. Data Security</span><br>
+<span class="subtitle">4.1 Protection Measures</span><br>
+We implement appropriate technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction.
+<br><br>
+<span class="subtitle">4.2 No Password Collection</span><br>
+Spud will never ask for your password or other private data.
+<br><br>
+<span class="title">5. Data Retention</span><br>
+<span class="subtitle">5.1 User-Submitted Data</span><br>
+Data submitted by users is retained as long as necessary to provide our services or until you delete or modify it.
+<br><br>
+<span class="subtitle">5.2 Member Data</span><br>
+User IDs are stored as long as you use the leveling system. You can request the deletion of your data by contacting us.
+<br><br>
+<span class="subtitle">5.3 Dashboard Data</span><br>
+Session data is temporary and deleted after a server restart or after a certain period, whichever comes first.
+<br><br>
+<span class="title">6. Compliance with Discord ToS</span><br>
+By using Spud, you agree to adhere to the Discord Terms of Service and Community Guidelines. Violation of these terms may result in the termination of your access to Spud.
+<br><br>
+<span class="title">7. Changes to This Privacy Policy</span><br>
+We may update this Privacy Policy from time to time. Any changes will be posted on our dashboard and will take effect immediately upon posting. Your continued use of Spud after any changes constitutes acceptance of the updated policy.
+<br><br>
+<span class="title">8. Contact Information</span><br>
+If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at <a href="mailto:jaimytuinyt@gmail.com">jaimytuinyt@gmail.com</a> or join our <a href="https://discord.gg/2ytGbkcCxF" target="_blank">Discord server</a>.<br>
+<br>
+Thank you for using Spud!

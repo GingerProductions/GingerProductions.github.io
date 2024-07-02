@@ -1,0 +1,41 @@
+<span class="title">1. Introduction</span><br>
+Welcome to Spud, a Discord bot designed to enhance your server experience with features like welcome messages, a verification system, and a leveling system. By using Spud and/or the online dashboard, you agree to abide by these Terms of Service (ToS). 
+<br><br>
+<span class="title">2. Data Collection and Usage</span><br>
+<span class="subtitle">2.1 User-Submitted Data</span><br>
+Spud collects and stores data that users submit, including:
+<ul>
+    <li>Server welcome messages</li>
+    <li>Verification system settings</li>
+    <li>Other configurations set up using the bot</li>
+</ul>
+<br>
+<span class="subtitle">2.2 Member Data</span><br>
+Spud collects basic user member data from Discord, such as:
+<ul>
+    <li>Username</li>
+    <li>User ID</li>
+    <li>Avatar</li>
+</ul>
+However, Spud only stores the User ID in a database to facilitate the leveling system.
+<br><br>
+<span class="subtitle">2.3 Dashboard</span><br>
+Spud features a dashboard where users can log in with their Discord account. The data collected during the login process is stored in a temporary session, which is deleted either after a server restart or after a predetermined period.
+<br><br>
+<span class="title">3. Data Security and Privacy</span><br>
+<span class="subtitle">3.1 No Passwords or Private Data</span><br>
+Spud will never ask for passwords or other private data.
+<br>
+<span class="subtitle">3.2 Session Data</span><br>
+All session data on the dashboard is temporary and will be deleted as described in section 2.3.
+<br><br>
+<span class="title">4. Compliance with Discord ToS</span><br>
+By using Spud, you agree to comply with the Discord Terms of Service and Community Guidelines. Failure to do so may result in the termination of your access to Spud.
+<br><br>
+<span class="title">5. Modifications to the ToS</span><br>
+We reserve the right to modify these ToS at any time. Any changes will be posted on our dashboard and will take effect immediately upon posting. Your continued use of Spud constitutes acceptance of the revised ToS.
+<br><br>
+<span class="title">6. Contact Information</span><br>
+If you have any questions or concerns regarding these ToS or Spud's services, please contact us at <a href="mailto:jaimytuinyt@gmail.com">jaimytuinyt@gmail.com</a> or join our <a href="https://discord.gg/2ytGbkcCxF" target="_blank">Discord server</a>.<br>
+<br>
+Thank you for using Spud!

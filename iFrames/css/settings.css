@@ -1,0 +1,182 @@
+h2 {
+    margin: 0;
+}
+
+p {
+    max-width: 800px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    cursor: pointer;
+}
+
+#terms {
+    margin-top: 20px;
+}
+
+#options > h2 {
+    font-size: 23px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Menu ------------------------------------- */
+/* Confirmation pop-up ------------------------------------- */
+#overlay {
+    display: none;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#menu {
+    position: relative;
+
+    width: 90%;
+    max-width: 600px;
+    max-height: 60%;
+
+    padding: 20px;
+
+    border-radius: 6px;
+    background-color: #161a2d;
+
+    overflow-y: scroll;
+}
+
+#menu > h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#menu > input {
+    float: right;
+    width: 30px;
+    height: 30px;
+
+    border-width: 0;
+    border-radius: 5px;
+
+    font-weight: bold;
+    color: #fff;
+    background-color: #2e3761;
+
+    cursor: pointer;
+}
+
+#menu > input:hover {
+    background-color: #404d85;
+}
+
+#text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#menu::-webkit-scrollbar {
+    background-color: #383f64;
+    width: 10px;
+    border-radius: 0 3px 3px 0;
+}
+
+#menu::-webkit-scrollbar-thumb {
+    border-radius: 0 3px 3px 0;
+    background-color: #232947;
+}
+
+/* Slider ------------------------------------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    cursor: not-allowed;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media (max-width: 650px) { 
+    #menu {
+        max-width: 90%;
+    }
+}

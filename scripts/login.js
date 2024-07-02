@@ -48,6 +48,7 @@ async function updateIframeSrc() {
             'home': '/iFrames/html/index.html',
             'dashboard': '/iFrames/html/loginMsg.html',
             'docs': '/iFrames/html/docs.html',
+            'settings': '/iFrames/html/settings.html',
             'login': '/iFrames/html/login.html',
         };
 
