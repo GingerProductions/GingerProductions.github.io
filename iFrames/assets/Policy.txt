@@ -1,5 +1,5 @@
 <span class="title">1. Introduction</span><br>
-This Privacy Policy outlines how SpudBot and related services, collects, uses, discloses, and protects your information. By using Spud, you agree to the practices described in this policy. If you have any questions or concerns, please contact us at <a href="mailto:jaimytuinyt@gmail.com">jaimytuinyt@gmail.com</a> or join our <a href="https://discord.gg/2ytGbkcCxF" target="_blank">Discord server</a>.
+This Privacy Policy outlines how Spud and related services, collects, uses, discloses, and protects your information. By using Spud, you agree to the practices described in this policy. If you have any questions or concerns, please contact us at <a href="mailto:jaimytuinyt@gmail.com">jaimytuinyt@gmail.com</a> or join our <a href="https://discord.gg/2ytGbkcCxF" target="_blank">Discord server</a>.
 <br><br>
 <span class="title">2. Information We Collect</span><br>
 <span class="subtitle">2.1 User-Submitted Data</span><br>
