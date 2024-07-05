@@ -3,22 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Verify help - JaimyTuin.com</title>
+    <link rel="icon" type="image/x-icon" href="/media/logos/spud.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -->
+    <meta property="og:title" content="Verification system support" />
+    <meta property="og:description" content="Experiencing issues regarding the server verify/tutorial system? You have come to the right place!" />
+    <meta property="og:image" content="/media/logos/SpudServerIcon.png" />
+    <meta property="og:url" content="https://jaimytuin.com/spud/verify" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#b17f4a">
+    <!--  -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/iFrames/css/index.css">
-    <link rel="stylesheet" href="/iFrames/css/docs.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/spud/verify.css">
     <script src="https://kit.fontawesome.com/6006becb07.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <main>
-        <section id="docs">
-            <!-- <h1>Documentation</h1> -->
-            <!-- <p>More documentation coming soon</p> -->
+    <header>
+        <h2>JaimyTuin.com</h2>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/spud">Spud</a></li>
+                <!-- <li class="dropdown">
+                    <a href="/spud">Spud</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/spud/verify">Verify help</a></li>
+                        <li><a href="/spud/dashboard.html">Dashboard</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/social">Social</a></li>
+            </ul>
+        </nav>
+        <section id="banner">
+            <h1>Verification system support</h1>
+            <p>Experiencing issues regarding the server verify/tutorial system? You have come to the right place!</p>
         </section>
+        <section id="bannerButtons"><a href="https://discord.com/oauth2/authorize?client_id=856570726932414484&permissions=8&integration_type=0&scope=bot" target="_blank">Invite the bot</a><a href="https://discord.gg/2ytGbkcCxF" target="_blank">Support server</a></section>
+    </header>
+    <main>
         <section class="features-section">
-            <h1>Documentation</h1>
-            <!-- <h2>Quick navigation</h2> -->
+            <h2>Quick navigation</h2>
             <div class="features-container">
                 <div class="feature-box" onclick="scrollToSection('targetSection1')">
                     <i class="fa-solid fa-user"></i>
@@ -141,22 +173,8 @@
                     <img src="/media/spudHelp/Oops.png" alt="SystemSetup">
                 </div>
             </div>
-        </section> 
+        </section>        
     </main>
-    <script>
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section) {
-                var headerHeight = window.innerWidth > 768 ? 140 : 165;
-                var targetPosition = section.offsetTop - headerHeight;
-
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    </script>
+    <script src="/scripts/script.js"></script>
 </body>
-
 </html>

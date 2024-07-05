@@ -1,286 +1,65 @@
-/* Importing Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* General styling */
+html {
+    font-family: sans-serif;
+    box-sizing: border-box; 
+}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+*, *::before, *::after {
+    box-sizing: inherit; 
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  min-height: 100vh;
-  background-color: #323752;
-}
-
-.mobileHeader {
-  display: none;
-}
-
-.mobileHeader > * {
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-
-/* Sidebar general styles */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 260px;
-  display: flex;
-  overflow-x: hidden;
-  flex-direction: column;
-  background: #161a2d;
-  padding: 25px 20px;
-  transition: width 0.4s ease, visibility 0.4s ease;
-}
-
-.sidebar .sidebar-header {
-  display: flex;
-  align-items: center;
-}
-
-.sidebar .sidebar-header img {
-  width: 42px;
-  border-radius: 50%;
-}
-
-.sidebar .sidebar-header h2 {
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 600;
-  white-space: nowrap;
-  margin-left: 23px;
-}
-
-.sidebar-links h4 {
-  color: #fff;
-  font-weight: 500;
-  white-space: nowrap;
-  margin: 10px 0;
-  position: relative;
-}
-
-.sidebar-links h4 span {
-  opacity: 1;
-}
-
-.sidebar-links {
-  list-style: none;
-  margin-top: 20px;
-  height: 80%;
-  overflow-y: auto;
-  scrollbar-width: none;
-}
-
-.sidebar-links::-webkit-scrollbar {
-  display: none;
-}
-
-.sidebar-links li a {
-  display: flex;
-  align-items: center;
-  gap: 0 20px;
-  color: #fff;
-  font-weight: 500;
-  white-space: nowrap;
-  padding: 15px 10px;
-  text-decoration: none;
-  transition: 0.2s ease;
-
-  cursor: pointer;
-}
-
-.sidebar-links li a:hover {
-  color: #161a2d;
-  background: #fff;
-  border-radius: 4px;
-}
-
-.user-account {
-  margin-top: auto;
-  padding: 12px 10px;
-  margin-left: -10px;
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.user-profile img {
-  width: 42px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-.user-profile h3 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.user-profile span {
-  font-size: 0.775rem;
-  font-weight: 600;
-}
-
-.user-detail {
-  margin-left: 23px;
-  white-space: nowrap;
-}
-
-.sidebar .user-account {
-  background: #232947;
-  border-radius: 4px;
-}
-
-/* DROPDOWN ---------------------- */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.dropbtn {
-  background-color: #232947;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  width: 100%;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sidebar:hover .dropbtn .btn-text {
-  display: inline;
-}
-
-.dropbtn .btn-text {
-  display: inline;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #232947;
-  min-width: 200px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 100%;
-  left: 0;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dropdown-content a:hover {
-  background-color: #353c63;
-}
-
-.dropdown-content a.selected::after {
-  content: "✓";
-  color: #fff;
-  margin-left: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.arrow {
-  font-size: 12px;
-  margin-left: 10px;
-}
-
-/* IFRAME --------------------------- */
-iframe {
-  margin: 0;
-  padding: 0;
-  display: block;
-  margin-left: 260px; /* Sidebar expanded width */
-  height: 100vh;
-  width: calc(100% - 260px); /* Adjust based on expanded sidebar width */
-  border-width: 0;
-}
-
-/* Non mobile devices */
-@media (min-width: 401px) and (max-width: 768px) {
-  .sidebar {
-    width: 85px;
-  }
-
-  .sidebar:hover {
-    width: 260px;
-  }
-
-  .sidebar-links h4 span {
-    opacity: 0;
-  }
-
-  .sidebar:hover .sidebar-links h4 span {
-    opacity: 1;
-  }
-
-  .sidebar:hover .sidebar-links .menu-separator {
-    transition-delay: 0s;
-    transform: scaleX(0);
-  }
-
-  .sidebar-links .menu-separator {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 1px;
-    transform: scaleX(1);
-    transform: translateY(-50%);
-    background: #4f52ba;
-    transform-origin: right;
-    transition-delay: 0.2s;
-  }
-
-  .sidebar .dropbtn .btn-text {
-    display: none;
-  }
-
-  iframe {
-    margin-left: 85px;
-    width: calc(100% - 85px); /* Adjust based on expanded sidebar width */
-    border-width: 0;
-  }
-}
-
-/* Mobile */
-@media (max-width: 400px) {
-  body {
-    overflow-y: hidden;
-  }
-
-  iframe {
     margin: 0;
-    padding-top: 40px;
-    width: 100%;
-    height: 1fr;
-  }
+    overflow-x: hidden;
 
-  /* Hamburger menu -------- */
-  .hamburger {
-    display: block;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+      "title . . nav"
+      "banner banner banner banner"
+      "button button button button";
+
+    width: 100%;
+    color: white;
+    background-image: url('/media/siteBanner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header > h2 {
+    margin: 10px 0 40px 10px;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 10px 40px 0;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Hamburger menu -------- */
+.hamburger {
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -290,10 +69,9 @@ iframe {
     justify-content: center;
     align-items: center;
     z-index: 10;
-    margin-left: 10px;
-  }
+}
 
-  .hamburger span {
+.hamburger span {
     display: block;
     width: 100%;
     height: 4px;
@@ -301,71 +79,178 @@ iframe {
     border-radius: 2px;
     margin: 4px 0;
     transition: all 0.3s;
-  }
+}
 
-  .hamburger.active span:nth-child(1) {
+.hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-  }
+}
 
-  .hamburger.active span:nth-child(2) {
+.hamburger.active span:nth-child(2) {
     opacity: 0;
-  }
+}
 
-  .hamburger.active span:nth-child(3) {
+.hamburger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-  /* Hamburger menu end -------- */
+}
+/* Hamburger menu end -------- */
 
-  .mobileHeader {
-    position: absolute;
+nav > ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    visibility: visible;
-    z-index: 20;
-    color: #fff;
-    background: #161a2d;
-  }
+    list-style: none;
+}
 
-  .mobileHeader>img {
-    width: 50px;
-  }
-
-  .mobileHeader > h2 {
-    z-index: 20;
-  }
-
-  .sidebar .sidebar-header {
-    display: none;
-  }
-
-  .sidebar {
-    width: 260px;
-    padding: 25px 20px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    visibility: hidden;
-  }
-  
-  .sidebar.open {
-    transform: translateX(0);
-    visibility: visible;
-  }
-  
-  /* Using :not(.open) to delay the visibility change when closing */
-  .sidebar:not(.open) {
-    transition: transform 0.3s ease, visibility 0s 0.3s;
-  }
-
-  .sidebar-links h4 span {
-    opacity: 1;
-  }
-
-  .sidebar.open .user-account {
+nav > ul > li {
     display: block;
-    background: #232947;
-    border-radius: 4px;
-  }
+    margin: 0 10px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+} 
+
+nav > ul > li > a:hover {
+    cursor: pointer;
+    color: gray;
+} 
+
+/* Dropdown menu -------- */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 160px;
+    z-index: 1;
+    flex-direction: column;
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+/* End of dropdown menu ---------------*/
+
+header > #banner {
+    display: flex;
+    flex-direction: column;
+    grid-area: banner;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header > #banner > p {
+    max-width: 650px;
+    padding: 0 20px;
+}
+
+#bannerButtons {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#bannerButtons > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    align-content: center; 
+    width: 200px;
+    height: 60px;
+    border-width: 0;
+    border-radius: 5px;
+    background-color: yellow;
+    margin: 10px 0 20px 0;
+
+    text-align: center;
+}
+
+#bannerButtons > a:hover {
+    cursor: pointer;
+    background-color: rgb(182, 182, 0);
+}
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+    header {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "title nav"
+            "banner banner"
+            "button button";
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav > ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    nav > ul > li {
+        margin: 10px 0;
+    }
+
+    nav > ul > li > a {
+        padding: 10px;
+        display: block;
+    }
+
+    nav > ul.open {
+        display: flex;
+    }
+}
+
+/* footer ----------------------------------- */
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+    height: 50px;
+    width: 100%;
+    background-color: yellow;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    font-weight: bold;
+    text-align: center;
 }

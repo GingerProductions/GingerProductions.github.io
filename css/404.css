@@ -1,0 +1,12 @@
+body {
+    background-image: url(/media/siteBanner.png);
+    background-size: cover;
+}
+
+header {
+    background-image: none;
+}
+
+#banner > img {
+    max-width: 300px;
+}

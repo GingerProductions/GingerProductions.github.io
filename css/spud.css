@@ -1,0 +1,103 @@
+#bannerButtons > a {
+    width: 150px;
+    height: 50px;
+    margin: 10px 5px 20px 5px;
+}
+
+.features-section {
+    padding: 40px 20px;
+    text-align: center;
+    /* background-color: #f9f9f9; */
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.feature-box > i {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #b17f4a;
+}
+
+.feature-description {
+    color: #666;
+    line-height: 1.5;
+}
+
+.feature-description a {
+    color: #3498db
+}
+
+@media (max-width: 768px) {
+    .feature-box {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Showcase css ------------------- */
+.botShowcase {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.example {
+    margin-bottom: 40px;
+}
+
+.example h2 {
+    color: #555;
+}
+
+.example img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+    margin: 10px 0;
+}
+
+.example p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6em;
+}
