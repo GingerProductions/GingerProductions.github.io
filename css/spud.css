@@ -101,3 +101,14 @@
     font-size: 1em;
     line-height: 1.6em;
 }
+
+#spudSite {
+    text-align: center;
+    color: #333;
+}
+
+#spudSite a {
+    color:#3498db;
+    /* text-decoration: none; */
+    cursor: pointer;
+}
