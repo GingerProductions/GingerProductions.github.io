@@ -58,10 +58,6 @@
     line-height: 1.5;
 }
 
-.feature-description a {
-    color: #3498db
-}
-
 @media (max-width: 768px) {
     .feature-box {
         width: 100%;
@@ -105,10 +101,4 @@
 #spudSite {
     text-align: center;
     color: #333;
-}
-
-#spudSite a {
-    color:#3498db;
-    /* text-decoration: none; */
-    cursor: pointer;
 }

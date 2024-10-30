@@ -17,6 +17,16 @@ body {
     background-color: #f9f9f9;
 }
 
+body a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #2a7db4;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -182,11 +192,12 @@ header > #banner > p {
     margin: 10px 0 20px 0;
 
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #bannerButtons > a:hover {
     cursor: pointer;
-    background-color: rgb(182, 182, 0);
+    transform: translateY(-7px); 
 }
 
 /* Media query for small screens */
