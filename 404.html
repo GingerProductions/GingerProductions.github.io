@@ -2,42 +2,100 @@
 <html>
 
 <head>
+    <!-- Default data -->
     <meta charset="UTF-8">
-    <title>JaimyTuin.com</title>
+    <title>404 - JaimyTuin.com</title>
     <link rel="icon" type="image/x-icon" href="/media/logos/DerpyGinger.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styling -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/404.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="https://kit.fontawesome.com/6006becb07.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        body a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            margin: 150px auto;
+
+            padding: 30px;
+            max-width: 800px;
+            background-color: #d4d4d4;
+            border-radius: 9px;
+
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        main img {
+            max-height: 300px;
+        }
+
+        body.dark-mode main {
+            background-color: #1a1a1a;
+        }
+
+        main h2 {
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h2>JaimyTuin.com</h2>
-        <nav>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-list">
-                <li><a href="/">Home</a></li>
-                <li class="dropdown">
-                    <a href="/spud">Spud</a>
-                    <ul class="dropdown-content">
-                        <li><a href="/spud/verify">Verify help</a></li>
-                    </ul>
-                </li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/social">Social</a></li>
-            </ul>
-        </nav>
-        <section id="banner">
-            <img src="/media/chars/JaimyShrug.png" alt="shrugging Jaimy">
-            <h1>Oops!</h1>
-            <p>Looks like you have found a page that doesn't or no longer exists.</p>
-        </section>
-        <section id="bannerButtons"><a href="/">Back to home</a></section>
-    </header>
-    <script src="/scripts/script.js"></script>
+    <main>
+        <article>
+            <h2>Oops! The page you're looking for can't be found.</h2>
+            <p>The current page might have been moved, renamed or doesn't exist anymore, please check the URL again.</p>
+            <br>
+            <h3>You will be redirected back to the homepage momentarily..</h3>
+        </article>
+    </main>
 </body>
+<script>
+
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([.$?*|{}()[]\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    // Check cookie and apply the stored theme on page load
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const storedTheme = getCookie('theme');
+        if (storedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            // Change the text inside the span when dark mode is applied
+            document.getElementById('theme-toggle').textContent = 'light_mode';
+        }
+    });
+
+    // Redirect
+    function redirect() {
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 5000);
+    }
+
+    window.onload = redirect;
+</script>
+
 </html>

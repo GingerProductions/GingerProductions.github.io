@@ -1,67 +1,168 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <!-- Default data -->
     <meta charset="UTF-8">
-    <title>JaimyTuin.com</title>
+    <title>JaimyTuin</title>
     <link rel="icon" type="image/x-icon" href="/media/logos/DerpyGinger.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  -->
-    <meta property="og:title" content="JaimyTuin.com" />
-    <meta property="og:description" content="On this website you can find information about my Discord bots, open-source projects and many more!" />
-    <meta property="og:image" content="/media/logos/DerpyGinger.png" />
+
+    <!-- embed -->
+    <meta property="og:title" content="Jaimy Tuin" />
+    <meta property="og:description" content="Dutch IT student with a diverse range of hobbies and skills." />
+    <meta property="og:image" content="/media/AIGinger.jpeg" />
     <meta property="og:url" content="https://jaimytuin.com" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#3498db">
-    <!--  -->
+
+    <!-- Styling -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="https://kit.fontawesome.com/6006becb07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
+    <!-- Topbar -->
     <header>
-        <h2>JaimyTuin.com</h2>
+        <h1>JaimyTuin</h1>
         <nav>
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <ul class="nav-list">
-                <li><a href="/">Home</a></li>
-                <li><a href="/spud">Spud</a></li>
-                <!-- <li class="dropdown">
-                    <a href="/spud">Spud</a>
-                    <ul class="dropdown-content">
-                        <li><a href="/spud/verify">Verify help</a></li>
-                        <li><a href="/spud/dashboard.html">Dashboard</a></li>
-                    </ul>
-                </li> -->
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/social">Social</a></li>
+                <li onclick="scrollToSection('about')">About</li>
+                <li onclick="scrollToSection('projects')">Projects</li>
+                <!-- <li>Social</li> -->
+                <li><span class="material-symbols-outlined" id="theme-toggle">dark_mode</span></li>
             </ul>
         </nav>
-        <section id="banner">
-            <h1>Welcome to JaimyTuin.com!</h1>
-            <p>On this website you can find information about my Discord bots, open-source projects and many more!</p>
-        </section>
-        <section id="bannerButtons"><a href="https://discord.gg/8KxqWAKCPe" target="_blank">Discord Server</a></section>
     </header>
+
+    <!-- Right sidebar -->
+    <aside>
+        <section id="socials">
+            <!-- Socials -->
+            <div id="socialIcons">
+                <h2>Socials</h2>
+                <a href="https://github.com/JaimyTuin223" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    @JaimyTuin223
+                </a>
+                <a href="https://www.youtube.com/@gingerproductions" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                    Ginger Productions
+                </a>
+                <a href="https://twitter.com/jaimytuin223" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    @JaimyTuin223
+                </a>
+                <a href="https://www.npmjs.com/~jaimytuin" target="_blank">
+                    <i class="fa-brands fa-npm"></i>
+                    JaimyTuin
+                    <!-- <span class="external material-symbols-outlined">open_in_new</span> -->
+                </a>
+            </div>
+            <br>
+            <!-- Discord servers -->
+            <div id="servers">
+                <h2><i class="fa-brands fa-discord"></i> Servers</h2>
+                <div id="serverList">
+                    <img src="/media/logos/GingerProductions.jpeg" width="80px"
+                        alt="Ginger productions Discord server logo">
+                    <img src="/media/logos/SpudServerIcon.png" width="80px" alt="Spud support Discord server logo">
+                </div>
+                <div id="serverInfo"></div>
+            </div>
+        </section>
+    </aside>
+
+    <!-- Page content -->
     <main>
-        <section id="examples">
+        <!-- About me -->
+        <section id="about">
             <article>
                 <h2>Who am I?</h2>
-                <p>Hi I'm Jaimy, a Dutch IT student with a diverse range of hobbies and skills. In addition to my passion for developing and drawing, I enjoy gaming, spending time in nature and practicing martial arts. Oh and I'm also forklift certified lol</p>
+                <p>Hi I'm Jaimy, a Dutch IT student with a diverse range of hobbies and skills. In addition to my
+                    passion for developing and drawing, I enjoy gaming, spending time in nature and practicing martial
+                    arts. Oh and I'm also forklift certified lol</p>
+                <p>Go take a look at some of my projects below!</p>
             </article>
-            <figure>
-                <img src="/media/JaimyArt.png" alt="DrawingByJaimy">
-            </figure>
+            <img src="/media/JaimyArt.png" alt="Jaimy drawing">
         </section>
+
+        <!-- Project embeds -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="projectsContainer">
+
+                <!-- Spud -->
+                <div class="projectEmbed">
+                    <div class="iconTitle">
+                        <img src="/media/logos/spud.svg" alt="spud bot icon">
+                        <h3>Spud - Multipurpose Discord bot</h3>
+                    </div>
+                    <p>Multipurpose Discord bot focused on improving servers and user interaction with verification,
+                        moderation, leveling and more!</p>
+                    <div class="showcase">
+                        <img class="showcase" src="/media/spudShowcase/verifySystem.png"
+                            alt="verification system showcase">
+                        <p class="imgDesc">Spud verification system</p>
+                    </div>
+
+                    <p>Explore more features on the <a href="https://spud.jaimytuin.com" target="_blank">Spud
+                            website</a>!</p>
+                </div>
+
+                <!-- Discord bot template -->
+                <div class="projectEmbed">
+                    <h3>Discord Bot template (Open Source)</h3>
+                    <p>Simple to understand open-source template for building your own Discord bot using Node.js and the
+                        latest Discord.js version.</p>
+                    <div class="showcase">
+                        <img class="showcase" src="/media/spudShowcase/templateBot.png"
+                            alt="verification system showcase">
+                        <p class="imgDesc">Command example</p>
+                    </div>
+                    <p>Whether you're a beginner or not, this template offers a great starting point to create your own
+                        fully functional bot! Learn more in the <a
+                            href="https://github.com/JaimyTuin223/discord.js-bot-template" target="_blank">Github
+                            repository</a>.</p>
+                </div>
+
+                <!-- Character.AI bot -->
+                <div class="projectEmbed">
+                    <h3>Character.AI bot (Open Source)</h3>
+                    <p>A Discord bot that lets you chat with your Character.ai character, bringing them to life in conversation!</p>
+                    <div class="showcase">
+                        <iframe class="showcase" src="https://www.youtube.com/embed/opzsBka7vkk?si=ofsfNnQbL_bcVJKP" frameborder="0"></iframe>
+                        <p class="imgDesc">Showcase & tutorial video</p>
+                        <!-- <img class="showcase" src="/media/spudShowcase/CharacterAIshowcase.png"
+                            alt="verification system showcase">
+                        <p class="imgDesc">Chat example</p> -->
+                    </div>
+                    <p>Want to have your AI character join the conversation on your server?<br>This is the project for you! Go check out the <a href="https://github.com/JaimyTuin223/character.ai-bot" target="_blank">Github repository</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <br>
     </main>
-<!--     <footer>
-        <p>Website under construction, more features coming soon!</p>
-    </footer> -->
-    <script src="/scripts/script.js"></script>
 </body>
+<script src="/scripts/theme.js"></script>
+<script src="/scripts/servers.js"></script>
+<script>
+    // Navigator
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            // Get the position of the target element
+            const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+
+            // Scroll to the target position with the fixed offset
+            window.scrollTo({
+                top: targetPosition - 100,  // Subtract the fixed offset
+                behavior: 'smooth'             // Smooth scroll
+            });
+        }
+    };
+</script>
+
 </html>
