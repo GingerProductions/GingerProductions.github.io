@@ -161,7 +161,6 @@ body.dark-mode .imgDesc {
     color: #b3b3b3;
 }
 /*  */
-/*  */
 
 
 /* Socials */
@@ -227,5 +226,27 @@ body.dark-mode #socialIcons i {
     margin-top: 10px;
     max-width: 300px;
 }
+/*  */
 
+/* Small devices */
+@media (max-width: 400px) {
+
+    aside {
+        display: none;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #about > img {
+        max-height: 130px;
+        margin-bottom: 20px;
+    }
+
+    .projectEmbed iframe {
+        max-height: 140px;
+    }
+}
 /*  */
