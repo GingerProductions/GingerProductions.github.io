@@ -4,12 +4,13 @@ html {
 }
 
 body {
-    background-color: #f9f9f9;
-}
-
-body.dark-mode {
     background-color: #121212;
     color: white;
+}
+
+body.light-mode {
+    background-color: #f9f9f9;
+    color: black;
 }
 
 body a {
@@ -36,16 +37,16 @@ header {
 
     padding: 10px 20px;
 
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: black;
+    background-color: #1a1a1a;
+    color: white;
 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 20;
 }
 
-body.dark-mode header {
-    background-color: #1a1a1a;
-    color: white;
+body.light-mode header {
+    background-color: #ffffff;
+    color: black;
 }
 
 header > h1 {
@@ -73,14 +74,14 @@ header > nav > ul > li:hover {
 section {
     padding: 30px;
     max-width: 800px;
-    background-color: #d4d4d4;
+    background-color: #1a1a1a;
     border-radius: 9px;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-body.dark-mode section {
-    background-color: #1a1a1a;
+body.light-mode section {
+    background-color: #d4d4d4;
 }
 
 section h2 {
@@ -120,11 +121,11 @@ section h2 {
 
     width: 100%;
 
-    background-color: #e6e6e6;
+    background-color: #272727;
 }
 
-body.dark-mode .projectEmbed {
-    background-color: #272727;
+body.light-mode .projectEmbed {
+    background-color: #e6e6e6;
 }
 
 .iconTitle {
@@ -154,11 +155,11 @@ body.dark-mode .projectEmbed {
 
 .imgDesc {
     margin-top: 0;
-    color: #3a3a3a;
+    color: #b3b3b3;
 }
 
-body.dark-mode .imgDesc {
-    color: #b3b3b3;
+body.light-mode .imgDesc {
+    color: #3a3a3a;
 }
 /*  */
 
@@ -187,11 +188,11 @@ aside {
     font-size: 25px;
     margin-right: 5px;
 
-    color: black;
+    color: white;
 }
 
-body.dark-mode #socialIcons i {
-    color: white;
+body.light-mode #socialIcons i {
+    color: black;
 }
 
 #socialIcons a {

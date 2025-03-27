@@ -37,24 +37,24 @@ function setCookie(name, value, options = {}) {
 
 // Function to toggle dark mode
 function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    const isDarkMode = document.body.classList.contains('dark-mode');
+    document.body.classList.toggle('light-mode');
+    const isLightMode = document.body.classList.contains('light-mode');
 
     // Change the text inside the span
     const themeIcon = document.getElementById('theme-toggle');
-    themeIcon.textContent = isDarkMode ? 'light_mode' : 'dark_mode';
+    themeIcon.textContent = isLightMode ? 'dark_mode' : 'light_mode';
 
     // Store the theme in a cookie
-    setCookie('theme', isDarkMode ? 'dark' : 'light', { expires: 365 });
+    setCookie('theme', isLightMode ? 'light' : 'dark', { expires: 365 });
 }
 
 // Check cookie and apply the stored theme on page load
 window.addEventListener('DOMContentLoaded', (event) => {
     const storedTheme = getCookie('theme');
-    if (storedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
+    if (storedTheme === 'light') {
+        document.body.classList.add('light-mode');
         // Change the text inside the span when dark mode is applied
-        document.getElementById('theme-toggle').textContent = 'light_mode';
+        document.getElementById('theme-toggle').textContent = 'dark_mode';
     }
 });
 
