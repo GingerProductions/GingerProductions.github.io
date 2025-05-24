@@ -234,7 +234,7 @@ body.light-mode #socialIcons i {
 /*  */
 
 /* Small devices */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     aside {
         display: none;
